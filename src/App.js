@@ -3,6 +3,8 @@
 
 import { useState } from "react";
 
+const deviceWidth = window.screen.availWidth;
+
 function App() {
   const [input, setInput] = useState({
     email: "",
@@ -11,6 +13,8 @@ function App() {
   const [showP, setShowP] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const showSmall = (deviceWidth > 700);
+  console.log(showSmall, deviceWidth)
 
   const sendData = async()=>{
     // validate input
@@ -384,7 +388,7 @@ function App() {
 </div>
 </div>
         </div>
-        <div style={{ visibility: "visible", display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start' }}>
+        <div className="hide-small" style={{ visibility: !showSmall ? "hidden" : "visible", display: !showSmall ? 'none' : 'flex', alignItems: 'flex-start', justifyContent: 'flex-start' }}>
             <div>
               <h1 style={{ fontSize: 38 }}>Yahoo makes it easy to enjoy <br /> what matters most in your world.</h1>
               <p>Best-in-class Yahoo Mail, breaking local, national and global news, finance, <br /> sport, music, films and more. You get more out of the web; you get more out of life.</p>
