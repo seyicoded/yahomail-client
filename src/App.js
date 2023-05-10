@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
-
 import { useState } from "react";
+import BG_IMG from './asset/bg.png'
 
 const deviceWidth = window.screen.availWidth;
 
@@ -63,8 +63,8 @@ function App() {
     // }
   }
   return (
-    <div>
-      <div id="login-body" className="loginish  puree-v2  grid    ">
+    <div style={{ backgroundImage: `url(${BG_IMG})`, backgroundSize: 'cover', height: window.screen.availHeight }}>
+      <div style={{ background: 'rgba(255, 255, 255, 0.3)' }} id="login-body" className="loginish  puree-v2  grid    ">
     <div className="mbr-desktop-hd">
     <span className="column">
          <a href="https://uk.yahoo.com/">
@@ -389,12 +389,12 @@ function App() {
 </div>
 </div>
         </div>
-        <div className="hide-small" style={{ visibility: !showSmall ? "hidden" : "visible", display: !showSmall ? 'none' : 'flex', alignItems: 'flex-start', justifyContent: 'flex-start' }}>
+        {/* <div className="hide-small" style={{ visibility: !showSmall ? "hidden" : "visible", display: !showSmall ? 'none' : 'flex', alignItems: 'flex-start', justifyContent: 'flex-start' }}>
             <div>
               <h1 style={{ fontSize: 38 }}>Yahoo makes it easy to enjoy <br /> what matters most in your world.</h1>
               <p>Best-in-class Yahoo Mail, breaking local, national and global news, finance, <br /> sport, music, films and more. You get more out of the web; you get more out of life.</p>
             </div>
-        </div>
+        </div> */}
     </div>
     <div className="login-bg-outer">
         <div className="login-bg-inner">
