@@ -65,17 +65,18 @@ function App() {
   return (
     <div style={{ backgroundImage: `url(${BG_IMG})`, backgroundSize: 'cover', height: window.screen.availHeight }}>
       <div style={{ background: 'rgba(255, 255, 255, 0.3)' }} id="login-body" className="loginish  puree-v2  grid    ">
-    <div className="mbr-desktop-hd">
-    <span className="column">
-         <a href="https://uk.yahoo.com/">
-            <img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" className="logo " width="" height="36" />
-            <img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_w_bestfit_frontpage_2x.png" alt="Yahoo" className="dark-mode-logo logo " width="" height="36" />
-        </a>
-    </span>
-    <span className="column help txt-align-right">
-        <a href="https://help.yahoo.com/kb/index?locale&#x3D;zh_HK&amp;page&#x3D;product&amp;y&#x3D;PROD_ACCT">Help</a>
-    </span>
-</div>
+    <div className="mbr-desktop-hd" style={{ background: 'rgba(255, 255, 255, 0.3)' }}>
+        {/* <span className="column">
+            <a href="https://uk.yahoo.com/">
+                <img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" className="logo " width="" height="36" />
+                <img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_w_bestfit_frontpage_2x.png" alt="Yahoo" className="dark-mode-logo logo " width="" height="36" />
+            </a>
+        </span>
+        <span className="column help txt-align-right">
+            <a href="https://help.yahoo.com/kb/index?locale&#x3D;zh_HK&amp;page&#x3D;product&amp;y&#x3D;PROD_ACCT">Help</a>
+        </span> */}
+        <br />
+    </div>
     <div className="login-box-container">
         <div className="login-box right">
             <div className="mbr-login-hd txt-align-center">
